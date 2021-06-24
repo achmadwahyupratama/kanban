@@ -1,0 +1,18 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "y-kanban",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "use_env_variable" : "DATABASE_URL",
+    "dialectOptions" : {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized" : false
+      }
+    }
+  }
+}
